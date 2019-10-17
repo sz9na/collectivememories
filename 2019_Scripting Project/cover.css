@@ -1,0 +1,144 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #0D5661;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #81C7D4;
+  border: .05rem solid #fff;
+}
+
+.btn-third,
+.btn-third:focus {
+  color:#0D5661;
+  text-shadow: #bbbbbb;
+  background-color: white;
+  border:0.5rem solid #fff;
+
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: white;
+}
+
+body {
+  display: flex;
+  background-color: white;
+ 
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.cover-container {
+  max-width: 42em;
+  background-color: white;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+/*
+ * Header
+ */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem; 
+font-family: 'Oswald', sans-serif;
+padding: 0 1.5rem;}
+
+
+.masthead {
+  margin-bottom: 1rem;border-bottom: 1rem;
+}
+
+header.masthead.mb-auto {
+    padding-bottom: 20px;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: #81C7D4;
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #81C7D4;
+  border-bottom-color: #0D5661;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+.cover {
+    padding: 0 1.5rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+
+
+/*Carousel*/
+.carousel-caption {
+  padding-bottom: 10px;
+}
+
+
+/*
+ * Footer
+ */
+.mastfoot {
+  color: black;
+  font-size: 10px;
+}
