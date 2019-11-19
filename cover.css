@@ -4,9 +4,11 @@
 
 /* Links */
 a,
-a:focus,
+a:focus{
+  color:black;
+}
 a:hover {
-  color: #fff;
+  color: #81C7D4;
 }
 
 /* Custom default button */
@@ -71,11 +73,10 @@ padding: 0 1.5rem;}
 
 
 .masthead {
-  margin-bottom: 1rem;border-bottom: 1rem;
+  margin-bottom: 1rem; border-bottom: 1rem;
 }
 
 header.masthead.mb-auto {
-    padding-bottom: 20px;
 }
 
 .masthead-brand {
@@ -100,7 +101,7 @@ header.masthead.mb-auto {
 }
 
 .nav-masthead .active {
-  color: #81C7D4;
+  color: #0D5661;
   border-bottom-color: #0D5661;
 }
 
