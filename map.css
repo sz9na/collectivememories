@@ -16,7 +16,7 @@ p{
 	width: 100vw;
 }
 
-#sidebar {
+/*#sidebar {
     position: fixed;
     left: 0;
     width: 30vw; 
@@ -25,14 +25,29 @@ p{
     margin-top: 56px;
     padding: 20px;
     overflow-y: scroll;
+}*/
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
+
+
 
 #map-sidebar {
     position: absolute;
     right: 0;
     height: 100vh;
     width: 15vw; 
-    background:rgba(250, 246, 229, 0.7);
+    background:rgba(255, 255, 255, 0.7);
     padding: 15px;
     z-index: 1;
     font-size: 10px;
@@ -62,31 +77,91 @@ margin-bottom: 200px;
         z-index: 1;
     }
 
-    #layers-control h3 { 
-        line-height: initial;
-        font-size: unset;
-    }
+#layers-control h3 { 
+    line-height: initial;
+    font-size: unset;
+}
 
-    #layers-control a {
-        font-size: 12px;
-        font-weight: 500;
-        color: #00394d;
-        display: block;
-        margin: 0 0 5px 0;
-        padding: 0;
-        padding: 10px;
-        text-decoration: none;
-        text-align: center;
-        background-color: #ccc;
-    }
+#layers-control a {
+    font-size: 12px;
+    font-weight: 500;
+    color: #00394d;
+    display: block;
+    margin: 0 0 5px 0;
+    padding: 0;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #ccc;
+}
 
-    #layers-control a.active {
-        background-color: #88CCD2;
-    }
+#layers-control a.active {
+    background-color: #88CCD2;
+}
 
-    #layers-control a:hover {
-        background-color: #F37452;
-    }
-    #layers-control a.active:hover {
-        background: #f00;
-    }
+#layers-control a:hover {
+    background-color: #F37452;
+}
+#layers-control a.active:hover {
+    background: #f00;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+.closebtn {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}

@@ -11,7 +11,9 @@ a:hover {
   color: #81C7D4;
 }
 
-/* Custom default button */
+
+    /* Custom default button */
+
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
@@ -28,8 +30,17 @@ a:hover {
   background-color: white;
   border:0.5rem solid #fff;
 
+
 }
 
+.btn-forth,
+.btn-forth:focus {
+  color:#F37452;
+  text-shadow: #bbbbbb;
+  background-color: white;
+  border:0.2rem solid #F37452;
+
+}
 
 /*
  * Base structure
@@ -60,7 +71,8 @@ body {
   padding-top: 5px;
   padding-bottom: 15px;
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto; 
+  margin-top: 20px;}
 
 /*
  * Header
@@ -73,11 +85,11 @@ padding: 0 1.5rem;}
 
 
 .masthead {
-  margin-bottom: 1rem; border-bottom: 1rem;
+  margin-bottom: 20px; border-bottom: 1rem;
 }
 
-header.masthead.mb-auto {
-  margin-bottom: 20px;
+header {
+  padding-bottom: 20px;
 }
 
 .masthead-brand {
@@ -115,7 +127,6 @@ header.masthead.mb-auto {
   }
 }
 
-
 /*
  * Cover
  */
@@ -142,9 +153,17 @@ header.masthead.mb-auto {
 }
 
 
+#subtitle{
+  width: 100%;
+  margin-top: 300px;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  z-index: 10;
+}
 /*
  * Footer
  */
+
 .mastfoot {
   color: black;
   font-size: 10px;
